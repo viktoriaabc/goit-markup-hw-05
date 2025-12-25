@@ -358,6 +358,7 @@ address {
 .socials-link-item {
   width: 40px;
   height: 40px;
+  
 }
 
 .socials-link {
@@ -405,16 +406,7 @@ address {
 }
 
 .portfolio-item {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   max-width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
@@ -422,23 +414,23 @@ address {
 }
 
   .overlay-wraper {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
   .overlay-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--iris);
-  width: 100%;
-  height: 100%;
-  padding: 40px 32px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--cloud);
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--iris);
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
@@ -446,27 +438,29 @@ address {
   transform: translateY(0);
 }
 
-.portfolio-text {
-  color: var(--slate)
-}
-
 .portfolio-img {
   width: 360px;
   height: 300px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc; 
   border-top: none;
-  
+   
 }
 .portfolio-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   color: var(--navy-blue)
+}
+
+.portfolio-text {
+  line-height: 1.5;
+  color: var(--slate)
 }
 
 .page-footer {
@@ -475,8 +469,8 @@ address {
 }
 
 .footer-wrap {
-display: flex;
-align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-container {
