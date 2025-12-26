@@ -453,17 +453,35 @@
             </li>
           </ul>
         </div>
-      </div>
+     
       <div class="footer-checkbox">
-        <p>Subscribe</p>
-      <form class="footer-form subscribe-form" name="subscribeForm" method="post" autocomplete="on">
-        <label class="footer-form-label" for="userFooterEmail">
-          <input class="footer-input" type="text" name="userFooterEmail" id="userFooterEmail" placeholder="E-mail" required>
-        
-          <button class="footer-subscribe-btn" type="submit">Subscribe</button>
-        </label>
+        <p class="footer-form-name" >Subscribe</p>
+        <div class="footer-form-wrap">
+          <form class="footer-form" name="subscribeForm" method="post" autocomplete="on">
+            <label 
+              class="footer-form-field" 
+              for="userFooterEmail">
+              <input
+              class="footer-form-input"
+              type="email"
+              name="userFooterEmail"
+              id="userFooterEmail"
+              placeholder="E-mail"
+              required>
+            </label>
+              <button
+              class="footer-subscribe-btn"
+              type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-telegram">
+                </use>
+              </svg>
+              </button>
+            </form>
         </div>
-      </form>
+    </div>
+ </div>
     </footer>
 
     <div class="backdrop">
@@ -493,7 +511,7 @@
                 name="userName" 
                 id="userName" 
                 minlength="3" 
-                required autofocus>
+                required>
                 <svg 
                 class="modal-form-icon" 
                 width="18" 
@@ -556,16 +574,15 @@
             name="userAgreement" 
             id="userAgreement" checked
             />
-              <label class="modal-form-box-label" for="userAgreement">
-                <span class="custom-checkbox">
-                  <svg class="modal-form-icon-box" width="10" height="8">
-                    <use href=".images/icons.svg#icon-arrow-down"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the <a class="agreement-form-link" href="#">Privacy Policy</a>
+            <label class="modal-form-box-label" for="userAgreement">
+              <span class="custom-checkbox">
+                <svg class="modal-form-icon-box" width="10" height="8">
+                  <use href=".images/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a class="agreement-form-link" href="#">Privacy Policy</a>
             </label>
           </div>
-
           <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>

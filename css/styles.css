@@ -471,6 +471,7 @@ address {
 .footer-wrap {
   display: flex;
   align-items: baseline;
+
 }
 
 .footer-container {
@@ -511,6 +512,7 @@ address {
 
 .footer-wrap-socials {
   display: block;
+  margin-left: 120px;
 }
 
 .footer-socials-title {
@@ -554,10 +556,53 @@ address {
   fill: var(--cloud);
 }
 
+.footer-checkbox {
+  margin-left: 80px;
+}
+.footer-form-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.footer-form-wrap {
+  display: inline-flex;
+  gap: 24px;
+}
+
+.footer-form-field {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: var(--navy-blue);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.footer--form-input {
+visibility: invisible;
+background-color: var(--navy-blue)
+}
+.footer-subscribe-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--iris);
+}
+.footer-subscribe-btn:focus,
+ .footer-subscribe-btn:hover {
+  background-color: var(--green);
+}
+.footer-btn-icon {
+  fill: var(--white);
+}
 
 
-/* ackdrop
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -565,7 +610,7 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: var(--dairy);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -693,7 +738,7 @@ opacity: 0.5;
 }
 .modal-form-agreement {
   margin-bottom: 24px;
-}
+ } 
 .custom-checkbox {
   display: inline-flex;
   justify-content: center;
@@ -742,5 +787,20 @@ white-space: nowrap;
 overflow: hidden;
 clip: rect(0, 0, 0, 0);
 clip-path: inset(100%);
+}
+.modal-send-btn {
+border-radius: 4px;
+padding: 16px 32px;
+width: 169px;
+height: 56px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: var(--iris);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: var(--white);
+
 }
 
