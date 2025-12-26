@@ -559,32 +559,47 @@ address {
 .footer-checkbox {
   margin-left: 80px;
 }
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 .footer-form-name {
+  
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
-}
-.footer-form-wrap {
-  display: inline-flex;
-  gap: 24px;
-}
-
-.footer-form-field {
-  border: 1px solid var(--white);
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  background-color: var(--navy-blue);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  
 }
 
 .footer--form-input {
-visibility: invisible;
-background-color: var(--navy-blue)
+  width: 264px;
+  height: 40px;
+  padding: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+
+  .color:placeholder {
+    color: var(--white);
+  }
 .footer-subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -592,6 +607,10 @@ background-color: var(--navy-blue)
   text-align: center;
   color: var(--white);
   background-color: var(--iris);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .footer-subscribe-btn:focus,
  .footer-subscribe-btn:hover {
@@ -602,7 +621,6 @@ background-color: var(--navy-blue)
 }
 
 
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -610,7 +628,7 @@ background-color: var(--navy-blue)
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -627,7 +645,6 @@ background-color: var(--navy-blue)
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-70%);
-
   width: 408px;
   min-height: 584px;
   padding: 40px;
@@ -636,9 +653,7 @@ background-color: var(--navy-blue)
   background-color: var(--dairy) ;
   padding: 72px 24px 24px 24px;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: transform 250ms cubic-beizer(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
@@ -655,17 +670,19 @@ background-color: var(--navy-blue)
   align-items: center;
   width: 24px;
   height: 24px;
-  border-radius: 100%;
+  border-radius: 50%;
   border: #E3E3E3 solid 1px;
   background-color: var(--cornflower);
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-xbtn:hover,
 .modal-xbtn:focus {
   background-color: var(--ocean);
-  border-color: var(--ocean);
+  border: none;
 }
+
 .modal-xbtn-icon {
   fill: var(--navy-blue);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -675,6 +692,7 @@ background-color: var(--navy-blue)
   fill: var(--white);
 }
 .modal-caption {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
