@@ -459,11 +459,11 @@
         <form class="footer-form" name="subscribeForm" method="post" autocomplete="on">
           <label 
               class="footer-form-field" 
-              for="userFooterEmail">
+              for="userfooteremail">
             <input
               class="footer-form-input"
               type="email"
-              name="userFooterEmail"
+              name="userfooteremail"
               id="userFooterEmail"
               placeholder="E-mail"
               required>
@@ -493,22 +493,21 @@
         <p 
         class="modal-caption">
         Leave your contacts and we will call you back
-      </p>
-      <form 
-        class="modal-form" 
-        name="callbackForm" 
-        method="post" 
-        autocomplete="on">
-
+        </p>
+        <form 
+          class="modal-form" 
+          name="callbackForm" 
+          method="post" 
+          autocomplete="on">
           <div class="modal-form-field">
             <label class="modal-form-label" 
-            for="userName">Name
+            for="user-name">Name
               <div class="modal-form-wrapper">
                 <input 
                 class="modal-form-input" 
                 type="text" 
-                name="userName" 
-                id="userName" 
+                name="user-name" 
+                id="user-name" 
                 minlength="3" 
                 required>
                 <svg 
@@ -522,9 +521,15 @@
           </div>
 
           <div class="modal-form-field">
-            <label class="modal-form-label" for="userPhone">Phone
+            <label 
+              class="modal-form-label" 
+              for="user-phone">Phone
               <div class="modal-form-wrapper">
-                <input class="modal-form-input" type="tel" name="userPhone" id="userPhone">
+                <input 
+                  class="modal-form-input" 
+                  type="tel" 
+                  name="user-phone" 
+                  id="user-phone">
                 <svg class="modal-form-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -535,13 +540,13 @@
           <div class="modal-form-field">
             <label 
             class="modal-form-label" 
-            for="userEmail">Email
+            for="user-email">Email
               <div class="modal-form-wrapper">
                 <input 
                 class="modal-form-input" 
                 type="email" 
-                name="userEmail" 
-                id="userEmail" 
+                name="user-email" 
+                id="user-email" 
                 required>
                 <svg 
                 class="modal-form-icon" 
@@ -553,11 +558,13 @@
             </label>
           </div>
           <div class="modal-form-field">
-          <label class="modal-form-label" for="userComment">Comment
+          <label 
+            class="modal-form-label" 
+            for="user-comment">Comment
           <textarea 
           class="modal-form-comment" 
-          name="userComment" 
-          id="userComment" 
+          name="user-comment" 
+          id="user-comment" 
           rows="5" 
           placeholder="Text input"
           minlength="20" 
@@ -570,10 +577,14 @@
             <input 
             class="agreement-input visually-hidden" 
             type="checkbox" 
-            name="userAgreement" 
-            id="userAgreement" checked
+            name="user-privacy" 
+            id="user-privacy"
+            value="true";
+            checked
             >
-            <label class="modal-form-box-label" for="userAgreement">
+            <label 
+              class="modal-form-box-label" 
+              for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="modal-form-icon-box" width="10" height="8">
                   <use href=".images/icons.svg#icon-arrow-down"></use>

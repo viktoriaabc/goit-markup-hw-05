@@ -574,7 +574,7 @@ address {
   
 }
 
-.footer--form-input {
+.footer-form-input {
   width: 264px;
   height: 40px;
   padding: 16px;
@@ -597,7 +597,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -618,6 +618,7 @@ address {
 }
 .footer-btn-icon {
   fill: var(--white);
+  margin-left: 16px;
 }
 
 
@@ -653,7 +654,7 @@ address {
   background-color: var(--dairy) ;
   padding: 72px 24px 24px 24px;
   opacity: 0;
-  transition: transform 250ms cubic-beizer(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
@@ -671,7 +672,7 @@ address {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: #E3E3E3 solid 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--cornflower);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,7 +680,7 @@ address {
 }
 .modal-xbtn:hover,
 .modal-xbtn:focus {
-  background-color: var(--ocean);
+  background-color: var(--white);
   border: none;
 }
 
@@ -700,13 +701,17 @@ address {
   text-align: center;
   color: var(--navy-blue);
 }
+.modal-form-field {
+  margin-bottom: 8px;
+}
 .modal-form-label {
 display: block;
 margin-bottom: 4px;
 font-weight: 400;
 font-size: 12px;
-line-height: 1.16667;
+line-height: 1.17;
 letter-spacing: 0.04em;
+color: var(--light-slate)
 }
 .modal-form-wrapper {
   position: relative;
@@ -757,6 +762,14 @@ opacity: 0.5;
 .modal-form-agreement {
   margin-bottom: 24px;
  } 
+ .modal-form-box-label {
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
 .custom-checkbox {
   display: inline-flex;
   justify-content: center;
@@ -768,10 +781,10 @@ opacity: 0.5;
   background-color: var(--white);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-icon-box {
-  fill: var(--white);
+  fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .agreement-input:checked + .modal-form-box-label > .custom-checkbox {
@@ -782,12 +795,7 @@ background-color: var(--ocean);
 .agreement-input:checked + .modal-form-box-label > .custom-checkbox .modal-form-icon-box {
   fill: var(--cloud);
 }
-.modal-form-box-label {
-margin-left: 8px;
-font-size: 12px;
-line-height: 1.16667;
-letter-spacing: 0.04em;
-}
+
 .agreement-form-link {
 line-height: 1.33333;
 text-decoration: underline;
@@ -807,18 +815,21 @@ clip: rect(0, 0, 0, 0);
 clip-path: inset(100%);
 }
 .modal-send-btn {
-border-radius: 4px;
-padding: 16px 32px;
-width: 169px;
-height: 56px;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-background: var(--iris);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-text-align: center;
-color: var(--white);
+  display: flex;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--iris);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
