@@ -747,6 +747,7 @@ fill: var(--iris);
 .modal-form-field-textarea {
   margin-bottom: 16px;
 }
+
 .modal-form-comment {
   display: block;
   width: 100%;
@@ -763,12 +764,19 @@ fill: var(--iris);
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-comment::placeholder {
+min-width: 57px;
+min-height: 14px;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: var(--navy-blue-modal);
+opacity: 0.5;
+}
 .modal-form-comment:focus {
 border-color: var(--iris);
 }
-.modal-form-comment::placeholder {
-opacity: 0.5;
-}
+
 .modal-form-agreement {
   margin-bottom: 24px;
  } 
