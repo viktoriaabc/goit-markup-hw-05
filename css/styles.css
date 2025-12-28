@@ -653,6 +653,7 @@ address {
   padding: 72px 24px 24px 24px;
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
@@ -795,15 +796,13 @@ opacity: 0.5;
 }
 
 
-.agreement-input:checked + .modal-form-box-label .custom-checkbox {
+.agreement-input:checked + .modal-form-box-label > .custom-checkbox {
 border: var(--ocean);
 background-color: var(--ocean);
 fill: var(--cloud);
 
 }
-.agreement-input:checked + .modal-form-box-label > .custom-checkbox .modal-form-icon-box {
-  
-}
+
 
 .agreement-form-link {
 line-height: 1.33333;
