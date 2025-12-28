@@ -260,7 +260,7 @@ address {
 }
 
 .features-item {
-  width: calc((100%-72px) / 3);
+  width: calc((100% - 72px) / 3);
 }
 
 .feature-wrap {
@@ -580,7 +580,7 @@ address {
   padding: 16px;
   font-size: 12px;
   line-height: 2;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   border: 1px solid var(--white);
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -590,9 +590,7 @@ address {
 }
 
 
-  .color:placeholder {
-    color: var(--white);
-  }
+
 .footer-subscribe-btn {
   display: flex;
   justify-content: center;
@@ -655,7 +653,7 @@ address {
   padding: 72px 24px 24px 24px;
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 .backdrop.is-open .modal {
   transform: translateX(-50%) translateY(-50%);
   transition-delay: 600ms;
@@ -675,23 +673,26 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--cornflower);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-xbtn:hover,
 .modal-xbtn:focus {
-  background-color: var(--white);
   border: none;
-}
+  background-color: var(--ocean);
 
+}
 .modal-xbtn-icon {
   fill: var(--navy-blue);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-xbtn-icon:hover,
-.modal-xbtn-icon:focus {
+
+.modal-xbtn:hover > .modal-xbtn-icon,
+.modal-xbtn:focus > .modal-xbtn-icon {
   fill: var(--white);
 }
+
+
 .modal-caption {
   margin-bottom: 16px;
   font-weight: 500;
@@ -713,9 +714,11 @@ line-height: 1.17;
 letter-spacing: 0.04em;
 color: var(--light-slate)
 }
+
 .modal-form-wrapper {
   position: relative;
 }
+
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -737,6 +740,9 @@ border-color: var(--iris);
 }
 .modal-form-input:focus + .modal-form-icon {
 fill: var(--iris);
+}
+.modal-form-field-textarea {
+  margin-bottom: 16px;
 }
 .modal-form-comment {
   display: block;
@@ -787,6 +793,10 @@ opacity: 0.5;
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-icon-box:hover,
+.modal-form-icon-box:focus {
+  fill:var(--white);
+}
 .agreement-input:checked + .modal-form-box-label > .custom-checkbox {
 border-color: var(--ocean);
 background-color: var(--ocean);
@@ -816,6 +826,9 @@ clip-path: inset(100%);
 }
 .modal-send-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
