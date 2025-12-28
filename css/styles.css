@@ -803,7 +803,7 @@ border-color: var(--iris);
 }
 
 
-.agreement-input:checked + .modal-form-box-label > .custom-checkbox {
+.agreement-input:checked + .modal-form-box-label .custom-checkbox {
 border: none;
 background-color: var(--ocean);
 fill: var(--cloud);
