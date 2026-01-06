@@ -104,7 +104,6 @@ address {
 .nav-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .nav-item {
@@ -233,13 +232,6 @@ address {
   padding: 120px 0;
 }
 
-.features-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1128px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -290,13 +282,9 @@ address {
 
 .section-team {
   padding: 120px 0;
-  background-color: #f4f4fd;
+  background-color: var(--cornflower);
 }
 
-.team-container {
-  margin: 0 auto;
-  background-color: var(--cloud);
-}
 
 .team-title {
   font-size: 36px;
@@ -471,7 +459,6 @@ address {
 .footer-wrap {
   display: flex;
   align-items: baseline;
-  margin-left: 156px;
 }
 
 .footer-container {
@@ -511,7 +498,6 @@ address {
 
 .footer-wrap-socials {
   display: block;
-  margin-left: 120px;
 }
 
 .footer-socials-title {
@@ -651,10 +637,10 @@ address {
   background-color: var(--dairy) ;
   padding: 72px 24px 24px 24px;
   opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open .modal {
-  transform: translateX(-50%) translateY(-50%);
   transition-delay: 600ms;
   opacity: 1;
 }
@@ -706,6 +692,7 @@ address {
 }
 .modal-form-label {
   display: block;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -776,7 +763,7 @@ address {
   margin-bottom: 24px;
  } 
  .modal-form-box-label {
-  margin-left: 8px;
+  
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -787,6 +774,7 @@ address {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -799,7 +787,7 @@ address {
 }
 
 
-.agreement-input:checked + .modal-form-box-label .custom-checkbox {
+.agreement-input:checked + .modal-form-box-label > .custom-checkbox {
   border: none;
   background-color: var(--ocean);
   fill: var(--cloud);
